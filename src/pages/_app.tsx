@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import Layout from '@/components/Layout'
 import { NextPage } from 'next'
 
-export type NextPageWithLayout = NextPage & {
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: React.ReactElement) => React.ReactNode
 }
 type AppPropsWithLayout = AppProps & {

@@ -5,7 +5,7 @@ interface NestedLayoutProps {
 }
 const NestedLayout = ({ children }: NestedLayoutProps) => {
   return (
-    <div>
+    <div className="flex">
       <SideNav />
       {children}
     </div>

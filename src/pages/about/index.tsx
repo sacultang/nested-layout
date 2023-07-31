@@ -3,7 +3,7 @@ import type { NextPageWithLayout } from '../_app'
 import NestedLayout from '@/components/NestedLayout'
 
 const About: NextPageWithLayout = () => {
-  return <div></div>
+  return <div>About</div>
 }
 About.getLayout = function getLayout(page: React.ReactElement) {
   return <NestedLayout>{page}</NestedLayout>
